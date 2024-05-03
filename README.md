@@ -1,8 +1,10 @@
-FROM ubuntu:20.04
+
+
+
+
+#FROM ubuntu:20.04
 RUN apt -get update && apt -get install -y\curl\&&rm -rf /var/lib/apt/lists/*
 CMD ["echo", "hello-world"]
-
-
 docker --version
 docker login
 docker pull hello-world
